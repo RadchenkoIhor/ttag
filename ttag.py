@@ -77,7 +77,7 @@ def open_file(filename: str):
         return
     except Exception as e:
         try:
-            os.system(f"libreoffice {filename}")
+            os.system(f"start soffice {filename}")
             return
         except Exception as e:
             pass
